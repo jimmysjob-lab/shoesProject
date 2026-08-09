@@ -1,0 +1,39 @@
+/* 導覽列 icon */
+.bi-person {
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.bg-header {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding: 152px 0;
+}
+
+@media (max-width: 767px) {
+  .bg-header {
+    padding: 87px 0;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/hero-sm.png?raw=true);
+  }
+}
+
+.circle::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: var(--neutral-900);
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.bi-arrow-up-right {
+  line-height: 1;
+  padding: 4px 8px 4px 0;
+  display: inline-block;
+}
