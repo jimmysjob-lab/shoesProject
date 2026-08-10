@@ -1,0 +1,15 @@
+.banner-bg {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner.png?raw=true);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 289px 0 289px 200px;
+}
+
+@media (max-width: 767px) {
+  .banner-bg {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-sm.png?raw=true);
+    padding: 155px 24px;
+  }
+}

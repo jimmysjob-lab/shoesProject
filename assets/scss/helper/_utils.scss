@@ -24,6 +24,12 @@
   padding-right: 12px;
 }
 
+.col-6 {
+  width: calc(100% / 12 * 6);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 .col-8 {
   width: calc(100% / 12 * 8);
   padding-left: 12px;
@@ -191,6 +197,10 @@
   margin-bottom: 32px;
 }
 
+.mb-10 {
+  margin-bottom: 40px;
+}
+
 .mb-12 {
   margin-bottom: 48px;
 }
@@ -215,28 +225,31 @@
   .mb-md-4 {
     margin-bottom: 16px;
   }
+  .mb-md-6 {
+    margin-bottom: 24px;
+  }
   .mb-md-8 {
     margin-bottom: 32px;
   }
 }
 
 @media (max-width: 576px) {
-  .m-md-0 {
+  .m-sm-0 {
     margin: 0;
   }
-  .mb-md-1 {
+  .mb-sm-1 {
     margin-bottom: 4px;
   }
-  .mb-md-2 {
+  .mb-sm-2 {
     margin-bottom: 8px;
   }
-  .mb-md-3 {
+  .mb-sm-3 {
     margin-bottom: 12px;
   }
-  .mb-md-4 {
+  .mb-sm-4 {
     margin-bottom: 16px;
   }
-  .mb-md-8 {
+  .mb-sm-8 {
     margin-bottom: 32px;
   }
 }
@@ -349,6 +362,10 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
+  .py-md-10 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -385,7 +402,20 @@
   }
 }
 
-/* heading 文字 */
+// display 文字
+.display-1 {
+  font-size: 64px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.display-2 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+// heading 文字
 .heading-h1 {
   font-size: 40px;
   line-height: 1.2;
@@ -422,9 +452,15 @@
   font-weight: 700;
 }
 
-/* @media文字RWD設定 */
+// @media文字RWD設定
 
 @media (max-width: 767px) {
+  .display-2-md {
+    font-size: 48px;
+  }
+  .h2-md {
+    font-size: 32px;
+  }
   .h3-md {
     font-size: 28px;
   }
@@ -443,6 +479,9 @@
 }
 
 @media (max-width: 576px) {
+  .display-2-sm {
+    font-size: 48px;
+  }
   .h3-sm {
     font-size: 28px;
   }
@@ -457,13 +496,13 @@
   }
 }
 
-/* label 文字 */
+// label 文字
 
 .label-md {
   font-weight: 500;
 }
 
-/* paragraph 文字 */
+// paragraph 文字
 
 .paragraph-md {
   font-weight: 400;
@@ -474,7 +513,7 @@
   font-weight: 400;
 }
 
-/* 圓角 */
+// 圓角
 
 .border-sm {
   border-radius: 4px;
@@ -488,7 +527,7 @@
   border-radius: 1000px;
 }
 
-/* 字體顏色 */
+// 字體顏色
 
 .text-neutral-0 {
   color: $neutral-0;
