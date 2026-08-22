@@ -14,6 +14,112 @@
   }
 }
 
-.popular-position {
-  position: absolute;
+// 熱銷補貨區塊
+@media (max-width: 767px) {
+  .product-md-row {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .product-md-col {
+    min-width: 316px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+// 聯名款式區塊
+.hero {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded.png?raw=true);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  text-align: center;
+  padding: 100px 0;
+
+  overflow: hidden;
+
+  .star-img {
+    position: absolute;
+    width: 48px;
+    top: 68px;
+    left: calc(50% - 397px);
+  }
+
+  .sparkle-img {
+    position: absolute;
+    width: 76px;
+    bottom: 132px;
+    right: calc(50% - 357px);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 64px 0;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded-sm.png?raw=true);
+
+    .star-img {
+      top: 32px;
+      left: -20px;
+    }
+    .sparkle-img {
+      bottom: 104px;
+      right: -28px;
+    }
+  }
+}
+
+// 系列選購區塊
+.series-text {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// 穿搭靈感區塊
+.inspiration {
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+  }
+
+  &-col-4 {
+    width: calc(100% / 12 * 4);
+    padding: 4px;
+  }
+
+  &-col-6 {
+    width: calc(100% / 12 * 6);
+    padding: 4px;
+  }
+
+  &-col-12 {
+    width: 100%;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inspiration-row {
+    flex-wrap: nowrap;
+    margin: 0 -8px;
+    img {
+      min-width: 300px;
+    }
+  }
+  .inspiration-col-4,
+  .inspiration-col-6,
+  .inspiration-col-12 {
+    width: unset;
+    padding: 0 8px;
+  }
 }
